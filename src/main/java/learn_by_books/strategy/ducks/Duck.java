@@ -1,0 +1,36 @@
+package learn_by_books.strategy.ducks;
+
+import learn_by_books.strategy.fly.FlyBehavior;
+import learn_by_books.strategy.quack.QuackBehavior;
+
+public abstract class Duck {
+
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
+
+    public Duck() {
+
+    }
+
+    public abstract void display();
+
+    public void performFly() {
+        flyBehavior.fly();
+    }
+
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
+    public void swim() {
+        System.out.println("All strategy.ducks float, even decoys!");
+    }
+
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+
+    public void setQuackBehavior(QuackBehavior qb) {
+        quackBehavior = qb;
+    }
+}
