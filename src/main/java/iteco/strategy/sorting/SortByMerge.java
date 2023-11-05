@@ -6,12 +6,13 @@ public class SortByMerge implements SortStrategy {
 
     private final MergeSort sort;
 
-    public SortByMerge(MergeSort sort) {
-        this.sort = sort;
+    public SortByMerge() {
+        this.sort = new MergeSort();
     }
 
     @Override
-    public boolean sort(int[] array) {
-        return false;
+    public void sort(int[] array) {
+        System.out.println("Выполняется сортировка слиянием.");
+        sort.mergeSort(array, 1, 2);
     }
 }

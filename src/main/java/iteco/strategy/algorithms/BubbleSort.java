@@ -2,10 +2,7 @@ package iteco.strategy.algorithms;
 
 public class BubbleSort {
 
-    public static int[] generated(int count) {
-
-    }
-    public static void bubbleSort(int[] array) {
+    public void bubbleSort(int[] array) {
         boolean sorted = false;
         int temp;
         while(!sorted) {

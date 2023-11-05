@@ -2,7 +2,7 @@ package iteco.strategy.algorithms;
 
 public class MergeSort {
 
-    public static void mergeSort(int[] array, int left, int right) {
+    public void mergeSort(int[] array, int left, int right) {
         if (right <= left) return;
         int mid = (left+right)/2;
         mergeSort(array, left, mid);
@@ -10,7 +10,7 @@ public class MergeSort {
         merge(array, left, mid, right);
     }
 
-    static void merge(int[] array, int left, int mid, int right) {
+    void merge(int[] array, int left, int mid, int right) {
         // вычисляем длину
         int lengthLeft = mid - left + 1;
         int lengthRight = right - mid;

@@ -6,12 +6,13 @@ public class SortByBubble implements SortStrategy {
 
     private final BubbleSort sort;
 
-    public SortByBubble(BubbleSort sort) {
-        this.sort = sort;
+    public SortByBubble() {
+        this.sort = new BubbleSort();
     }
 
     @Override
-    public boolean sort(int[] array) {
-        return false;
+    public void sort(int[] array) {
+        System.out.println("Выполняется сортировка пузырьком.");
+        sort.bubbleSort(array);
     }
 }
