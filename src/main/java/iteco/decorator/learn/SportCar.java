@@ -1,4 +1,4 @@
-package learn_by_books.decorator;
+package iteco.decorator.learn;
 
 public class SportCar implements Car {
 

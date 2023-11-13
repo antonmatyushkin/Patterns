@@ -1,4 +1,4 @@
-package iteco.decorator;
+package iteco.decorator.homework;
 
 public final class MessangerNotifier implements Notifier {
 
