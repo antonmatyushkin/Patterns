@@ -25,4 +25,5 @@ public final class MailQueue implements Externalizable {
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         throw new UnsupportedOperationException("Serialization is denied.");
     }
+
 }

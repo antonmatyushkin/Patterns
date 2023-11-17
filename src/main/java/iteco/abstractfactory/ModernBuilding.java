@@ -1,6 +1,6 @@
 package iteco.abstractfactory;
 
-public class ClassicSchoolBuilding implements BuildingFactory {
+public class ModernBuilding implements BuildingFactory {
 
     @Override
     public House buildHouse() {
